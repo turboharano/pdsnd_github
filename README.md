@@ -18,6 +18,9 @@ washington.csv
 
 ### Credits
 Consultant source:
+
 https://classroom.udacity.com/
+
 https://docs.python.org/3/library/stdtypes.html
+
 https://stackoverflow.com/
