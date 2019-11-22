@@ -55,7 +55,7 @@ def get_filters():
     return city, month, day
 
 
-def load_data(city, month, day):
+def l_d(city, month, day):
 
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -81,7 +81,7 @@ def load_data(city, month, day):
     return df
 
 
-def time_stats(df):
+def t_s(df):
 
     """Displays statistics on the most frequent times of travel."""
 
@@ -106,7 +106,7 @@ def time_stats(df):
     print('-'*40)
 
 
-def station_stats(df):
+def s_s(df):
 
     """Displays statistics on the most popular stations and trip."""
 
@@ -134,7 +134,7 @@ def station_stats(df):
     print('-'*40)
 
 
-def trip_duration_stats(df):
+def t_d_s(df):
 
     """Displays statistics on the total and average trip duration."""
 
@@ -154,7 +154,7 @@ def trip_duration_stats(df):
     print('-'*40)
 
 
-def user_stats(df):
+def u_s(df):
 
     """Displays statistics on bikeshare users."""
 
@@ -184,7 +184,7 @@ def user_stats(df):
     print('-'*40)
 
     
-def user_type_only(df):
+def u_t_o(df):
 
     """Displays user type only."""
 
@@ -226,14 +226,14 @@ def display_raw_data(df):
 def main():
     while True:
         city, month, day = get_filters()
-        df = load_data(city, month, day)
-        time_stats(df)
-        station_stats(df)
-        trip_duration_stats(df)
+        df = l_d(city, month, day)
+        t_s(df)
+        s_s(df)
+        t_d_s(df)
         if city != 'washington':
-            user_stats(df)
+            u_s(df)
         else:
-            user_type_only(df)
+            u_t_o(df)
         display_raw_data(df)
 
         restart = input('\nWould you like to restart? Enter yes(y) or anything else if no.\n')
