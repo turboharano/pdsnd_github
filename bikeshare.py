@@ -199,28 +199,6 @@ def u_t_o(df):
     print('-'*40)
     
     
-def display_raw_data(df):
-
-    """Displays raw data."""
-    
-    lower_bound=0
-    upper_bound=5
-    raw = input('\nWould you like to retrieve raw data? Enter yes(y) or no(n).\n')
-    while True:
-        if raw.lower() in ['no','n','stop']:
-            print('Exiting...')
-            break
-        elif raw.lower() in ['yes', 'y', '']:
-            print(df[df.columns[0:]].iloc[lower_bound:upper_bound])
-            lower_bound += 5
-            upper_bound += 5
-            raw = input('\nContinue next 5 lines? Enter yes("Enter") or stop.\n')
-        else:
-            print('Invalid input, please, try again!')
-            raw = input('\nWould you like to retrieve (or continue retrieving) raw data? Enter yes(y) or no(n).\n')
-            
-            
-    print('-'*40)
         
         
 def main():
@@ -234,7 +212,7 @@ def main():
             u_s(df)
         else:
             u_t_o(df)
-        display_raw_data(df)
+        
 
         restart = input('\nWould you like to restart? Enter yes(y) or anything else if no.\n')
         if restart.lower() not in ['yes','y']:
