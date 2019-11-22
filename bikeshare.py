@@ -102,7 +102,7 @@ def time_stats(df):
     common_hour=df['hour'].mode()[0]
     print('Most common start hour: ', common_hour)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCalculation delayed %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -130,7 +130,7 @@ def station_stats(df):
     print('Most frequent trip: \n', common_start_end_station)
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCalculation delayed %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -150,7 +150,7 @@ def trip_duration_stats(df):
     print('Mean travel time: ', mean_travel_time)
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCalculation delayed %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -180,7 +180,7 @@ def user_stats(df):
     print('Most common year of birth:\n', most_common)
  
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCalculation delayed %s seconds." % (time.time() - start_time))
     print('-'*40)
 
     
@@ -195,7 +195,7 @@ def user_type_only(df):
     user_types=df['User Type'].value_counts()
     print('User types count:\n', user_types)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCalculation delayed %s seconds." % (time.time() - start_time))
     print('-'*40)
     
     
