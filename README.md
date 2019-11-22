@@ -2,22 +2,22 @@
 10/31/2019
 
 ### Project Title
-Explor Bike-charing data syste
+Explore Bike-sharing data system
 
 ### Description
-Bike-sharing system alow users to rent bicicles on a very short-tem basis for a price. This allow people to borow a bike from point A and retur to at point B,
-throgh they can alo return it to the same location if they'd like to just go for a ride. Eac bike can srve several users per day.
+Bike-sharing system allow users to rent bicycles on a very short-term basis for a price. This allow people to borrow a bike from point A and return to at point B,
+through they can also return it to the same location if they'd like to just go for a ride. Each bike can serve several users per day.
 
-This project comares the system usage between three large cities: Chicago, New Yirk City and Washington DC.
+This project compares the system usage between three large cities: Chicago, New York City and Washington DC.
 
 ### Files used
 bikeshare.py
-chifago.csv
+chicago.csv
 new_york_city.csv
-washinton.csv
+washington.csv
 
 ### Credits
-Cosultant source:
+Consultant source:
 https://classroom.udacity.com/
 https://docs.python.org/3/library/stdtypes.html
 https://stackoverflow.com/
